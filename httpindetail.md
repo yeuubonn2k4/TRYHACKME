@@ -118,3 +118,6 @@ Có rất nhiều mã trạng thái HTTP khác nhau và điều đó chưa bao g
 
 
 ![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/f9e21900-7883-4e6a-9919-3fa841002574)
+
+
+https://tryhackme.com/r/room/httpindetail
