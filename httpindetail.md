@@ -120,4 +120,68 @@ Có rất nhiều mã trạng thái HTTP khác nhau và điều đó chưa bao g
 ![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/f9e21900-7883-4e6a-9919-3fa841002574)
 
 
-https://tryhackme.com/r/room/httpindetail
+## Headers
+
+Tiêu đề là các bit dữ liệu bổ sung mà bạn có thể gửi đến máy chủ web khi thực hiện yêu cầu
+
+Mặc dù không có tiêu đề nào được yêu cầu nghiêm ngặt khi thực hiện yêu cầu HTTP, nhưng bạn sẽ khó xem được trang web một cách chính xác.
+
+### Common Request Headers
+
+Đây là những tiêu đề được gửi từ máy khách (thường là trình duyệt của bạn) đến máy chủ.
+
+- Host : Một số máy chủ web lưu trữ nhiều trang web, do đó, bằng cách cung cấp tiêu đề máy chủ, bạn có thể cho nó biết bạn yêu cầu trang web nào, nếu không, bạn sẽ chỉ nhận được trang web mặc định cho máy chủ.
+
+- User-Agent: Đây là số phiên bản và phần mềm trình duyệt của bạn, cho máy chủ web biết phần mềm trình duyệt của bạn giúp nó định dạng trang web phù hợp với trình duyệt của bạn và một số thành phần HTML, JavaScript và CSS chỉ khả dụng trong một số trình duyệt nhất định.
+
+- Cookie : Dữ liệu được gửi đến máy chủ để giúp ghi nhớ thông tin của bạn (xem tác vụ cookie để biết thêm thông tin)
+
+### Common Response Headers
+
+- Set-Cookie: Thông tin cần lưu trữ sẽ được gửi trở lại máy chủ web theo từng yêu cầu (xem tác vụ cookie để biết thêm thông tin)
+
+- Cache-Control : Thời gian lưu trữ nội dung phản hồi trong bộ nhớ đệm của trình duyệt trước khi yêu cầu lại
+
+- Content-Type:Điều này cho khách hàng biết loại dữ liệu nào đang được trả về, tức là HTML, CSS, JavaScript, Hình ảnh, PDF, Video, v.v. Khi sử dụng tiêu đề loại nội dung, trình duyệt sẽ biết cách xử lý dữ liệu.
+
+- Content-Encoding:Phương pháp nào đã được sử dụng để nén dữ liệu để làm cho nó nhỏ hơn khi gửi qua internet
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/db56bc4c-3f63-4d3e-8151-82190a7a9709)
+
+## Cookies 
+
+Chắc hẳn bạn đã từng nghe đến cookie trước đây, chúng chỉ là một phần dữ liệu nhỏ được lưu trữ trên máy tính của bạn. Cookie được lưu khi bạn nhận được tiêu đề "Đặt cookie" từ máy chủ web. Sau đó, mỗi yêu cầu tiếp theo bạn thực hiện, bạn sẽ gửi dữ liệu cookie trở lại máy chủ web.
+Vì HTTP không có trạng thái (không theo dõi các yêu cầu trước đó của bạn), cookie có thể được sử dụng để nhắc nhở máy chủ web bạn là ai, một số cài đặt cá nhân cho trang web hoặc liệu bạn đã từng truy cập trang web đó trước đây hay chưa. Chúng ta hãy xem đây là một ví dụ về yêu cầu HTTP:
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/9014fba3-692f-4008-967b-128259f98441)
+
+Cookie có thể được sử dụng cho nhiều mục đích nhưng được sử dụng phổ biến nhất để xác thực trang web. Giá trị cookie thường không phải là một chuỗi văn bản rõ ràng nơi bạn có thể nhìn thấy mật khẩu mà là một mã thông báo (mã bí mật duy nhất mà con người không dễ dàng đoán được).
+
+- Viewing Your Cookies
+
+Bạn có thể dễ dàng xem những cookie mà trình duyệt của bạn đang gửi đến một trang web bằng cách sử dụng các công cụ dành cho nhà phát triển trong trình duyệt của bạn. Nếu bạn không chắc chắn về cách truy cập các công cụ dành cho nhà phát triển trong trình duyệt của mình, hãy nhấp vào nút "Xem trang web" ở đầu tác vụ này để xem hướng dẫn cách thực hiện.
+
+Khi bạn đã mở các công cụ dành cho nhà phát triển, hãy nhấp vào tab ` "Network" ` . Tab này sẽ hiển thị cho bạn danh sách tất cả các tài nguyên mà trình duyệt của bạn đã yêu cầu. Bạn có thể nhấp vào từng cái để nhận thông tin chi tiết về yêu cầu và phản hồi.
+
+Nếu trình duyệt của bạn gửi cookie, bạn sẽ thấy những cookie này trên tab ` "Cookie" `  của yêu cầu.
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/12c1bc13-21c6-4397-88e9-b4fe1a423f8e)
+
+
+## Task 7 : Making Requests
+
++) GET 
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/b963fc8e-d1f5-488e-a41a-312b802f0ddf)
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/61b28ffa-a31e-4515-930d-3515320e2f42)
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/a8cf61ff-3e3d-4afd-a5b7-43fa47e689e2)
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/d23a56dc-48cf-4dbb-8b5f-15674dda3117)
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/4b5d346c-c217-4116-960a-658eaa4a9228)
+
+![image](https://github.com/yeuubonn2k4/TRYHACKME/assets/161863346/e7786394-53cb-4124-9f4f-056c25ecdd1f)
+
+
