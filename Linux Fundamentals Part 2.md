@@ -130,3 +130,69 @@ Cho đến nay, các tệp chúng ta đã sử dụng trong các ví dụ của 
 ![image](https://github.com/user-attachments/assets/f853a5a0-a9ba-42c2-9d58-1883f73f7ac0)
 
 ## 5. Permissions 101
+
+![image](https://github.com/user-attachments/assets/437d8dca-7d65-4738-9897-52cbed3703ab)
+
+Mặc dù đáng sợ, ba cột này rất quan trọng trong việc xác định một số đặc điểm của tệp hoặc thư mục và liệu chúng ta có quyền truy cập vào tệp hoặc thư mục đó hay không. Tệp hoặc thư mục có thể có một số đặc điểm xác định cả hành động nào được phép và người dùng hoặc nhóm nào có khả năng thực hiện hành động đã cho -- chẳng hạn như sau:
+
+**Đọc**
+
+**Viết**
+
+**Thi hành**
+
+#### Tóm tắt: Sự khác biệt giữa Người dùng và Nhóm
+
+Hãy đưa điều này vào bối cảnh thực tế; người dùng hệ thống chạy máy chủ web phải có quyền đọc và ghi tệp cho một ứng dụng web hiệu quả. Tuy nhiên, các công ty như công ty lưu trữ web sẽ phải muốn cho phép khách hàng của họ tải tệp của riêng họ lên trang web của họ mà không phải là người dùng hệ thống máy chủ web -- làm ảnh hưởng đến tính bảo mật của mọi khách hàng khác. 
+
+#### Chuyển đổi giữa người dùng
+
+Việc chuyển đổi giữa những người dùng trên bản cài đặt Linux rất dễ dàng nhờ lệnh su. Trừ khi bạn là người dùng root (hoặc sử dụng quyền root thông qua sudo), thì bạn cần biết hai điều để tạo điều kiện thuận lợi cho việc chuyển đổi tài khoản người dùng này:
+
+- Người dùng chúng tôi muốn chuyển sang
+
+- Mật khẩu của người dùng
+
+Đơn giản, bằng cách cung cấp lệnh -l chuyển đổi tới su, chúng ta sẽ khởi động một shell giống với người dùng thực tế đang đăng nhập vào hệ thống hơn - chúng ta thừa hưởng nhiều thuộc tính hơn của người dùng mới, tức là các biến môi trường, v.v. 
+
+![image](https://github.com/user-attachments/assets/e4dd37fe-3c31-4b9f-b043-1a572ded487b)
+
+Ví dụ, khi sử dụng suđể chuyển sang "user2", phiên mới sẽ đưa chúng ta đến thư mục gốc của người dùng trước đó. 
+
+![image](https://github.com/user-attachments/assets/f623361f-6c12-4a0c-a4e9-fbccf998ae3e)
+
+Bây giờ, sau khi sử dụng -l, phiên làm việc mới của chúng ta đã tự động đưa chúng ta đến thư mục gốc của "người dùng". 
+
+## 6. Common Directories
+
+*/etc*
+
+- Là 1 trong nhung thu muc go quan trong nhat trong he thong cua ban. Thư mục etc (viết tắt của etcetera) là vị trí phổ biến để lưu trữ các tệp hệ thống được hệ điều hành của bạn sử dụng.
+
+- Ví dụ, tệp sudoers được đánh dấu trong ảnh chụp màn hình bên dưới chứa danh sách người dùng và nhóm có quyền chạy sudo hoặc một tập hợp lệnh với tư cách là người dùng root.
+
+Ngoài ra, bên dưới còn có các tệp " passwd " và " shadow ". Hai tệp này đặc biệt dành cho Linux vì chúng hiển thị cách hệ thống của bạn lưu trữ mật khẩu cho từng người dùng theo định dạng được mã hóa gọi là sha512.
+
+![image](https://github.com/user-attachments/assets/1ae00cf3-cf67-47c2-b7af-799ba31a5b42)
+
+*/var*
+
+Thư mục "/var", với "var" là viết tắt của dữ liệu biến, là một trong những thư mục gốc chính được tìm thấy trên bản cài đặt Linux . Thư mục này lưu trữ dữ liệu thường xuyên được truy cập hoặc ghi bởi các dịch vụ hoặc ứng dụng đang chạy trên hệ thống. Ví dụ, các tệp nhật ký từ các dịch vụ và ứng dụng đang chạy được ghi ở đây ( /var/log ), hoặc dữ liệu khác không nhất thiết phải liên kết với một người dùng cụ thể (tức là cơ sở dữ liệu và những thứ tương tự).
+
+![image](https://github.com/user-attachments/assets/082e3509-01ee-480f-a3a2-f7d4d51e9655)
+
+*/root*
+
+Không giống như thư mục /home , thư mục /root  thực sự là home cho người dùng hệ thống "root". Không có gì hơn ở thư mục này ngoài việc chỉ hiểu rằng đây là thư mục home cho người dùng "root". Nhưng, điều này đáng được đề cập vì giả định hợp lý là người dùng này sẽ có dữ liệu của họ trong một thư mục như " /home/root " theo mặc định.  
+
+![image](https://github.com/user-attachments/assets/6182975a-42e9-4d02-8429-898eacdde1fe)
+
+*/tmp*
+
+Đây là thư mục gốc duy nhất được tìm thấy trên bản cài đặt Linux. Viết tắt của " temporary ", thư mục /tmp là thư mục dễ bay hơi và được sử dụng để lưu trữ dữ liệu chỉ cần truy cập một hoặc hai lần. Tương tự như bộ nhớ trên máy tính của bạn, sau khi máy tính được khởi động lại, nội dung của thư mục này sẽ bị xóa.
+
+Điều hữu ích cho chúng tôi trong pentesting là bất kỳ người dùng nào cũng có thể ghi vào thư mục này theo mặc định. Nghĩa là khi chúng tôi có quyền truy cập vào máy, nó sẽ là nơi tốt để lưu trữ những thứ như tập lệnh liệt kê của chúng tôi.
+
+![image](https://github.com/user-attachments/assets/7c417461-b659-444f-af11-c05eb748bba3)
+
+
