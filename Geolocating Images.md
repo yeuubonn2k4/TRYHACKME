@@ -39,3 +39,44 @@ https://www.bellingcat.com/resources/how-tos/2019/12/26/guide-to-USE-reverse-ima
 
 ![image](https://github.com/user-attachments/assets/10198bf0-7846-4d3d-be23-3caac894e468)
 
+### Task 4 Now your turn
+
+https://yandex.com/images/
+
+![image](https://github.com/user-attachments/assets/e3f0b5c7-b873-46cf-a73e-8d4b699a2ef6)
+
+-  Thay co Sport Coner va co shefield
+
+
+Search Gg ta thay co bai viet 
+
+![image](https://github.com/user-attachments/assets/4910852b-7940-4201-abe0-6a4b18a0ed87)
+
+- Do la goc chup khac cua anh nay
+
+![image](https://github.com/user-attachments/assets/bf73e0da-78a2-479f-b31e-
+95a9c8cffa53)
+
+![image](https://github.com/user-attachments/assets/0ff76cfc-0a06-4367-b94e-7ebf365e0539)
+
+### Nhiệm vụ 6 Đến lượt bạn rồi!
+
+![image](https://github.com/user-attachments/assets/48419095-b4ad-454b-9029-4b45be280c5d)
+
+![image](https://github.com/user-attachments/assets/808f4ca6-112a-4103-a920-9ef626877b5e)
+
+![image](https://github.com/user-attachments/assets/52463585-aeba-435b-a68f-0febbe6a5a2e)
+
+![image](https://github.com/user-attachments/assets/9378ea91-9f2f-49f9-87e6-c04fbec3ce03)
+
+### Nhiệm vụ 7 Đến lượt bạn, bạn có thể nhìn thấy gì?
+
+![image](https://github.com/user-attachments/assets/ff942830-3a96-48c8-a553-de54acbb7cb6)
+
+![image](https://github.com/user-attachments/assets/7f803e86-4740-4d66-8be0-7fb312be5ab7)
+
+![image](https://github.com/user-attachments/assets/6c4352dc-ddd6-48af-b5ac-0d0e4c9bd822)
+
+
+
+
