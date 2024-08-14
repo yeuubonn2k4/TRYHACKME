@@ -77,6 +77,9 @@ Search Gg ta thay co bai viet
 
 ![image](https://github.com/user-attachments/assets/6c4352dc-ddd6-48af-b5ac-0d0e4c9bd822)
 
+### Hay tham khao
+
+https://www.bellingcat.com/news/2020/01/21/geolocating-venezuelan-lawmakers-in-europe/
 
 
 
